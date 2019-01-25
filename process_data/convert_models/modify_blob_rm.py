@@ -2,8 +2,8 @@
 import cPickle as pickle
 import numpy as np
 
-model_in = 'input_model_file'
-model_out = 'output_model_file'
+model_in = '/model/pretrained_model/i3d_nonlocal_32x4_I3D_pretrain_400k.pkl'
+model_out = '/model/output/nonlocal_32x4_diva.pkl'
 
 target_blobs = []
 reject_blobs = []
@@ -38,7 +38,7 @@ for i in range(len(now_keys)):
         del blobs[now_name]
         print(now_name)
 
-blobs['lr'] = 0.01
+blobs['lr'] = 0.00001
 
 filehandler = open(model_out, 'wb')
 pickle.dump(blobs, filehandler)
