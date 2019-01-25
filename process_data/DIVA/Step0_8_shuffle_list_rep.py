@@ -8,8 +8,8 @@ import sys
 import numpy as np
 import random
 
-src = '/data/weik/DIVA/divaTrainTestList20/trainlist01.txt'
-outlist = '/data/weik/DIVA/divaTrainTestList20/trainlist01_shuffle_rep.txt'
+src = '/data/weik/DIVA/divaTrainTestList20/trainlist01_video.txt'
+outlist = '/data/weik/DIVA/divaTrainTestList20/trainlist01_video_shuffle_rep.txt'
 
 
 f = open(src, 'r')
